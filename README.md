@@ -1,5 +1,5 @@
 ALLOWED FOR COMMERCIAL USE
 LOGIN IS
 username: admin
-password: admin124
+password: admin123
 CHANGE IT AT login.php
