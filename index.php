@@ -15,7 +15,6 @@ $posts = json_decode(file_get_contents('posts.json'), true);
         <?php foreach ($posts as $index => $post): ?>
             <h2><?= htmlspecialchars($post['title']) ?></h2>
             <p><?= nl2br(htmlspecialchars($post['content'])) ?></p>
-            <a href="admin.php?delete=<?= $index ?>">Delete</a>
             <hr>
         <?php endforeach; ?>
     <?php else: ?>

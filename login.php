@@ -1,8 +1,7 @@
-
 <?php
 session_start();
 $USERNAME = 'admin';
-$PASSWORD_HASH = password_hash('admin123', PASSWORD_DEFAULT);
+$PASSWORD_HASH = password_hash('4nd4w1bu', PASSWORD_DEFAULT);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['username'] === $USERNAME && password_verify($_POST['password'], $PASSWORD_HASH)) {
@@ -17,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
