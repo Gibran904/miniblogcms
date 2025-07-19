@@ -36,7 +36,7 @@ if (isset($_GET['delete'])) {
 </head>
 <body>
     <h1>Admin Panel</h1>
-    <a href="index.php">Back to Blog</a> | <a href="logout.php">Logout</a>
+    <a href="index.php">Back to Blog</a> | <a href="upload.php">Upload Media</a> | <a href="logout.php">Logout</a>
     <h2>Add New Post</h2>
     <form method="POST">
         <input type="text" name="title" placeholder="Title" required><br><br>
